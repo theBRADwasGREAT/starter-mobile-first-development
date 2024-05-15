@@ -1,29 +1,68 @@
 main {
-  margin-top: 60px;
+  padding: 20px 0;
 }
 
-main h1 {
-  margin: 0 10px;
+section {
+  margin-bottom: 100px;
+}
+
+h1 {
+  margin: 0 0 30px 10px;
   text-align: center;
   font-family: "Amatic SC", cursive;
-  font-size: 65px;
+  font-size: 60px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-main h2 {
-  margin: 18px 0 12px 0;
-  border-bottom: 1px solid #5c4f41;
+h2 {
+  margin: 0 10px;
+  border-bottom: 1px solid gray;
   font-family: "Special Elite", cursive;
-  font-size: 24px;
 }
 
-main h3 {
-  margin: 18px 0 12px 0;
-  border-bottom: 1px solid #5c4f41;
+h3 {
+  margin: 12px 0;
+  border-bottom: 1px solid lightgray;
   font-family: "Special Elite", cursive;
-  font-size: 18px;
 }
 
-main p {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
+/* Groups & Items */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+main img {
+  width: 100%;
+}
+
+.collage {
+  background-color: #7a3c1d;
+}
+
+.collage img {
+  width: 100%;
 }
